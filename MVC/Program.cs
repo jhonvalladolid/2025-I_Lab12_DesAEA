@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Registro de DbContext con cadena de conexión
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("WinAuthConnection")));
 
 
 // Add services to the container.
